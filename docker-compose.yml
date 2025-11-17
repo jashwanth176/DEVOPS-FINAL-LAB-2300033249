@@ -16,7 +16,7 @@ services:
     image: jashwanth176/2300033249-final-backend:latest
     container_name: springboot
     ports:
-      - "30031:2000"
+      - "30032:2000"
     depends_on:
       - mysqldb
     restart: on-failure
@@ -27,7 +27,7 @@ services:
     image: jashwanth176/2300033249-final-frontend:latest
     container_name: react
     ports:
-      - "30032:80"
+      - "30031:80"
     depends_on:
       - backend
     restart: on-failure
